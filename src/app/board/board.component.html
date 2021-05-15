@@ -1,0 +1,13 @@
+
+<header>
+    <div class="boardTitle">Trello Board</div>
+</header>
+
+<button class="addList" (click)="addListToBoard()">Add List</button>
+
+<div class="card-list" *ngIf="data" >
+    <div *ngFor = "let list of data; let i = index">
+        <app-list [listData]="list" [listIndex]="i" (deleteListEvent)="deleteListFromBoard($event)"></app-list>
+    </div>
+</div>
+

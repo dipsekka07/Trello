@@ -1,0 +1,7 @@
+<div class="card-box draggable" *ngIf= "cardData" [appDraggable]="{data: {cardData: cardData, cardIndex: cardIndex, listIndex: cardListIndex}}"   >
+    <div class="card-title-box">
+        <span class="title" contenteditable="true" (input)="onCardTitleChange($event.target, cardIndex)">{{cardData.title}}</span>
+        <div class="delete" (click)="deleteCard(cardIndex)">x</div>
+    </div>
+    <div contenteditable="true">{{cardData.description}}</div>
+</div>

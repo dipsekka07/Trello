@@ -1,0 +1,27 @@
+    header
+    {
+        
+        border-bottom: 2px solid #000;
+        
+        .boardTitle {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            margin: 10px;
+        }
+    }
+
+    button.addList {
+        float: right;
+        padding: 4px;
+        margin: 2px;
+        font-size: 14px;
+        font-family: cursive;
+    }
+
+    .card-list {
+        margin : 10px;
+        display: flex;
+    }
+    
+

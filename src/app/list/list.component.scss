@@ -1,0 +1,39 @@
+.list-box{
+    border: 1px solid grey;
+    display: block;
+    width: 230px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.title {
+    width: 100%;
+    margin: 0 0 2px 0;
+    background-color: pink;
+}
+
+.card-list:last-child {
+    margin-bottom: 20px;
+}
+
+.drop-target {
+    border: 1px dashed #ebebeb;
+    margin: 1rem;
+    padding: 1rem;
+    width: 6rem;
+  }
+
+.add-card {
+    text-align: center;
+}
+
+.card-title-box {
+    display: flex;
+    background-color: pink;
+    border-bottom: 1px solid gray;
+    border-radius: 4px 4px 0 0;
+}
+
+.delete {
+    padding: 2px;
+}

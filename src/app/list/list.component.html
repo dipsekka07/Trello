@@ -1,0 +1,17 @@
+<div class="list-box " >
+    <div class="card-title-box">
+        <div class="title" contenteditable="true">{{listData.title}}</div>
+        <div class="delete" (click)="deleteList(listIndex)">x</div>
+    </div>
+    
+    <div *ngFor="let card of cards;  let i = index" class="card-list" >
+        <app-card   [cardData]="card" [cardIndex]="i" [cardListIndex]="listIndex" (deleteCardEvent)='deleteCardFromList($event)' 
+            (addCardEvent)='addNewCardToList($event)'> </app-card>
+         
+    </div>
+
+    <div class="drop-target" [appDropTarget]="{zone:'zone'}" (appDrop)="onDrop($event)">
+    </div>
+
+    <div class="add-card" (click)="addDummyCard()">+</div>
+</div>
